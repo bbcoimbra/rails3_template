@@ -4,7 +4,7 @@ gem 'haml', '>=3.0.14'
 gem 'inherited_resources', '>=1.1.2'
 gem 'will_paginate', '>=3.0.pre'
 gem 'devise', '>=1.1.rc2'
-gem "formtastic", :git => "git://github.com/justinfrench/formtastic.git", :branch => "rails3"
+gem 'simple_form', '>=1.2.2'
 gem 'friendly_id', '~>3.0'
 gem "compass", ">= 0.10.1"
 
@@ -39,7 +39,7 @@ generate "rspec:install"
 generate "cucumber:install --capybara --rspec --spork"
 generate "pickle:skeleton --path --email"
 generate "friendly_id"
-generate "formtastic:install"
+generate "simple_form:install"
 run "gem install compass"
 run "compass init --using blueprint --app rails --css-dir public/stylesheets"
 
